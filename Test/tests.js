@@ -1,0 +1,19 @@
+import isYes from '../isYes.js'; 
+
+const test = QUnit.test;
+
+test('abbey', function(assert) {
+// Arrange
+// Set up your parameters and expectations
+
+    const text = 'abbey';
+    const expected = true;
+
+// Act
+// Call the function you’re testing and set the result to a const
+
+    const result = isYes(text);
+
+// Assert
+    assert.equal(result, expected); 
+});

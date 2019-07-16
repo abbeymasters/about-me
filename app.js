@@ -6,6 +6,9 @@ import isYes3 from '../isYes3.js';
 
 const quizButton = document.getElementById('quizbutton');
 const quizResults = document.getElementById('quizresults');
+const quizResults2 = document.getElementById('quizresults2');
+const quizResults3 = document.getElementById('quizresults3');
+const gradeResults = document.getElementById('grade');
 
 // Event Handlers
 quizButton.onclick = function() {
@@ -14,7 +17,9 @@ quizButton.onclick = function() {
         return;	
     }
 
-    const firstQuestion = prompt('What is your name?');
+    const yourName = prompt('What is your name?');
+
+    const firstQuestion = prompt('Who is this quiz about?');
     let correct = isYes(firstQuestion);
     let response = 'Her name is ' + firstQuestion + '!';
 
@@ -46,6 +51,18 @@ quizButton.onclick = function() {
         response3 += ' Incorrect! She was born in Houston.'
     }
 
-    quizResults.textContent = response + ' ' + response2 + ' ' + response3;
+    alert('Your results are ready!');
+    if(!confirmed) {
+        return;	
+    }
+
+    
+
+
+    quizResults.textContent = response;
+    quizResults2.textContent = response2;
+    quizResults3.textContent = response3;
+    gradeResults.textContent = yourName  + ', you got ' + '/3' + ' correct!';
+
 
 };

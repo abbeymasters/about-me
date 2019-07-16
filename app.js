@@ -10,6 +10,8 @@ const quizResults2 = document.getElementById('quizresults2');
 const quizResults3 = document.getElementById('quizresults3');
 const gradeResults = document.getElementById('grade');
 
+let quizScore = 0;
+
 // Event Handlers
 quizButton.onclick = function() {
     const confirmed = confirm('Do you want to continue with the quiz?');
@@ -25,7 +27,8 @@ quizButton.onclick = function() {
 
     if(correct) {
         response += ' Correct.';
-    }
+        quizScore += 1/3;
+    } 
     else {
         response += ' Incorrect! Her name is Abbey.';
     }
@@ -36,6 +39,7 @@ quizButton.onclick = function() {
 
     if(correct2) {
         response2 += ' Correct.';
+        quizScore += 1/3;
     }
     else {
         response2 += ' Incorrect! It is actually Americanah.';
@@ -47,22 +51,25 @@ quizButton.onclick = function() {
 
     if(correct3) {
         response3 += ' Correct.';
+        quizScore += 1/3;
     } else {
-        response3 += ' Incorrect! She was born in Houston.'
+        response3 += ' Incorrect! She was born in Houston.';
     }
 
     alert('Your results are ready!');
     if(!confirmed) {
         return;	
     }
+    
+    quizScore = quizScore * 100;
+    quizScore = Math.round(quizScore);
 
     
-
 
     quizResults.textContent = response;
     quizResults2.textContent = response2;
     quizResults3.textContent = response3;
-    gradeResults.textContent = yourName  + ', you got ' + '/3' + ' correct!';
+    gradeResults.textContent = yourName + ', you got ' + quizScore + '%' + ' correct!';
 
 
 };

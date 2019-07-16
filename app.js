@@ -27,7 +27,7 @@ quizButton.onclick = function() {
 
     if(correct) {
         response += ' Correct.';
-        quizScore += 1/3;
+        quizScore += 1 / 3;
     } 
     else {
         response += ' Incorrect! Her name is Abbey.';
@@ -39,7 +39,7 @@ quizButton.onclick = function() {
 
     if(correct2) {
         response2 += ' Correct.';
-        quizScore += 1/3;
+        quizScore += 1 / 3;
     }
     else {
         response2 += ' Incorrect! It is actually Americanah.';
@@ -51,7 +51,7 @@ quizButton.onclick = function() {
 
     if(correct3) {
         response3 += ' Correct.';
-        quizScore += 1/3;
+        quizScore += 1 / 3;
     } else {
         response3 += ' Incorrect! She was born in Houston.';
     }
@@ -64,7 +64,7 @@ quizButton.onclick = function() {
     quizScore = quizScore * 100;
     quizScore = Math.round(quizScore);
 
-    
+
 
     quizResults.textContent = response;
     quizResults2.textContent = response2;

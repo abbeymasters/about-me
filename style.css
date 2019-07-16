@@ -182,3 +182,10 @@ h2 {
     padding-bottom: 100px;
     display: inline-block;
 }
+
+#photos {
+    padding-bottom: 100px;
+    display: inline-block;
+    padding-left: 1.80%;
+    padding-right: 1%;
+}

@@ -4,7 +4,14 @@ import compareNumbers from './compare-numbers';
 
 const quizButton = document.getElementById('button');
 const input = document.getElementById('inputnumber');
-const tries = document.getElementById('tries'); 
+const numInput = parseInt(input);
+
+const tooHigh = document.createElement('toohigh');
+const youWin = document.getElementById('youwin');
+const tooLow = document.getElementById('toolow');
+
+
+// const tries = document.getElementById('tries'); 
 
 
 // Event Handlers
@@ -13,10 +20,11 @@ quizButton.addEventListener('click', () => {
     let numButton = numInput.value;
 
     const result = compareNumbers(numButton, 7);
-    if (result === 0) {
-       return youwin.classList.remove('hidden');
-} else if (result === -1) {
-        return 'TOO LOW!';
-} else {
-    return 'TOO HIGH!';
-}
+    if(result === 0) {
+        youWin.classList.add('hidden');
+        quizButton.disabled = true;
+    } else if(result === -1) {
+        tooLow.classList.add('hidden');
+    } else {
+        tooHigh.classList.add('hidden');
+    }});

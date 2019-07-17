@@ -149,12 +149,12 @@ h4{
 #rules {
   padding-top: 50px;
   float: left;
-  width: 28%;
+  width: 27%;
 }
 
 #buttonsection {
     float: left;
-    width: 30.0%;
+    width: 31.0%;
     padding-left: 150px;
     padding-top: 50px;
   }
@@ -167,6 +167,7 @@ h4{
 
 input {
   display: inline-block;
+
 }
 
 h5 {
@@ -179,6 +180,7 @@ h5 {
 
 #picktext {
     text-align: left;
+    float: left;
 }
 
 #followtext {

@@ -73,3 +73,7 @@ input {
 h5 {
   color: white;
 }
+
+.hidden {
+  display: none;
+}

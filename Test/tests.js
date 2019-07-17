@@ -1,2 +1,2 @@
 import './isYes-test.js'; 
-import 'Numbers/comparenumbers.js';
+import './compare-numbers.js';

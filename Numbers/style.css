@@ -143,7 +143,6 @@ h4{
 
 #secondsection {
   padding-top: 75px;
-  padding-bottom: 200px;
   width: 100%;
 }
 
@@ -163,6 +162,7 @@ h4{
 #questionmark {
   float: left;
   width: 30.33%;
+  padding-bottom: 100px;
 }
 
 input {

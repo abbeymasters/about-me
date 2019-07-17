@@ -1,3 +1,5 @@
+import 'Numbers/compare-numbers';
+
 // Dom Elements
 
 const button = document.getElementById('button');

@@ -1,10 +1,22 @@
-import 'Numbers/compare-numbers';
+import compareNumbers from './compare-numbers';
 
 // Dom Elements
 
-const button = document.getElementById('button');
+const quizButton = document.getElementById('button');
 const input = document.getElementById('inputnumber');
+const tries = document.getElementById('tries'); 
 
-const tooHigh = document.getElementById('toohigh');
-const tooLow = document.getElementById('toolow');
-const youWin = document.getElementById('youwin');
+
+// Event Handlers
+
+quizButton.addEventListener('click', () => {
+    let numButton = numInput.value;
+
+    const result = compareNumbers(numButton, 7);
+    if (result === 0) {
+       return youwin.classList.remove('hidden');
+} else if (result === -1) {
+        return 'TOO LOW!';
+} else {
+    return 'TOO HIGH!';
+}

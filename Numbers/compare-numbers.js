@@ -1,11 +1,12 @@
-export default compareNumbers;
 
-function compareNumbers(number) {
+function compareNumbers(input, correct) {
     const numInput = parseInt(input);
-    if(numInput === 7) {
-        return youWin;
-    } else if(numInput < 7) {
-        return tooLow;
+    if(numInput === correct) {
+        return 0;
+    } else if(numInput < correct) {
+        return -1;
     } else {
-        return tooHigh;
+        return 1;
     }}
+
+export default compareNumbers;

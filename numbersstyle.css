@@ -1,0 +1,71 @@
+
+.nav {
+  padding-left: 48%;
+  padding-top: 50px;
+  font-family: Rubik;
+  font-size: 18px;
+  color: white;
+}
+
+#header {
+  color: white;
+  font-family: Rubik;
+  font-size: 75px;
+  text-align: center;
+  width: auto;
+}
+
+a {
+  color: white;
+  font-family: Crimson Text;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+#firstheader {
+  text-align: center;
+  justify-content: center;
+  color: #11bce1;
+}
+
+#firstsection {
+  background-color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+h4{
+  font-family: Rubik;
+  font-weight: 700;
+  color: white;
+  font-size: 16px;
+  line-height: 1.6em;
+  padding-left: 50px;
+}
+
+#secondsection {
+  padding-top: 75px;
+  padding-bottom: 200px;
+  width: 100%;
+}
+
+#rules {
+  padding-top: 50px;
+  float: left;
+  width: 33.33%;
+}
+
+#questionmark {
+  float: left;
+  width: 33.33%;
+}
+
+#buttonsection {
+  padding-top: 50px;
+  float: left;
+  width: 33.33%;
+}
+
+input {
+  display: inline-block;
+}

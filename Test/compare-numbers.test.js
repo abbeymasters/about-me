@@ -1,4 +1,4 @@
-import compareNumbers from '../Numbers/compare-numbers.js';
+import compareNumbers from 'compare-numbers.js';
 
 const test = QUnit.test;
 

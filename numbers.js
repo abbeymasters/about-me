@@ -1,4 +1,4 @@
-import compareNumbers from './compare-numbers';
+import compareNumbers from './compare-numbers.js';
 
 // Dom Elements
 
@@ -21,10 +21,10 @@ quizButton.addEventListener('click', () => {
 
     const result = compareNumbers(numButton, 7);
     if(result === 0) {
-        youWin.classList.add('hidden');
+        youWin.classList.remove('hidden');
         quizButton.disabled = true;
     } else if(result === -1) {
-        tooLow.classList.add('hidden');
+        tooLow.classList.remove('hidden');
     } else {
-        tooHigh.classList.add('hidden');
+        tooHigh.classList.remove('hidden');
     }});

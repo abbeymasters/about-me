@@ -1,0 +1,17 @@
+body {
+    border: solid white 10px;
+  }
+
+#rpsnav {
+padding: 50px 33%;
+width: 100%;
+}
+      
+a {
+color: white;
+font-family: Crimson Text;
+font-weight: 700;
+font-size: 28px;
+padding-right: 15px;
+width: 600px;
+}

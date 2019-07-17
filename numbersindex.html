@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="numbers.js" type="module"></script>
     <link rel="stylesheet" type="text/css" href="main.css"/>
     <link rel="stylesheet" type="text/css" href="style.css"/>
     <title>Document</title>
 </head>
 <body>
     <header>
-        <nav class ="nav">
-            <a href="./">Home</a>
-        </nav>
+            <nav id="rpsnav">
+                    <a href="./">Home</a>
+                    <a href="numbersindex.html">Number Game</a>
+                    <a href="RPS-index.html">Rock Paper Scissors</a>
+             </nav>
     </header>
     
         <h1 id="header">Are you ready to play a GAME?</h1>
@@ -36,12 +37,13 @@
                 <input id="inputnumber">
                 <button id="button">Submit</button><br>
                 <h5>You've used <span id="tries"></span> out of 4 tries.</h5><br>
-                <img id="toohigh" class="hidden" src="/Users/abbeymasters/alchemy/bootcamp-one/about-me/src/toohigh.png">
-                <img id="toolow" class="hidden" src="/Users/abbeymasters/alchemy/bootcamp-one/about-me/src/toolow.png">
+                <img id="toohigh" class="hidden" src="src/toohigh.png">
+                <img id="toolow" class="hidden" src="src/toolow.png">
                 <img id="youwin" class="hidden" src="/Users/abbeymasters/alchemy/bootcamp-one/about-me/src/YOUWIN.png">
                 </div>
                 <img id="questionmark" src="https://images.vexels.com/media/users/3/152285/isolated/preview/867cfbfe782227d2c8311abe53f72cd5-3d-question-mark-drawing-by-vexels.png" alt="numbers game image" width="200">
             
      </section>
+     <script src="./numbers.js" type="module"></script>
 </body>
 </html>

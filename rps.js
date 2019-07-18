@@ -35,3 +35,6 @@ playButton.addEventListener('click', () => {
         loseCount.textContent = losses;
     }
 });
+
+// Bet Button
+

@@ -35,3 +35,35 @@ playButton.addEventListener('click', () => {
         loseCount.textContent = losses;
     }
 });
+
+// Bet Button Section
+
+const betButton = document.getElementById('bet-button');
+const betInput = document.getElementById('bet-input');
+const moneyCount = document.getElementById('money-count');
+
+let win = 5;
+let lose = 5;
+
+
+betButton.addEventListener('click', () => {
+    const choice = getPlay();
+    
+    result.classList.remove('invisible');
+    let src = './src/assets/' + choice + '.png';
+    result.src = src; 
+
+    const whichOne = document.querySelector('input:checked');
+    const won = whichOne.value === choice;
+
+    if(won) {
+        message.textContent = 'WON!';
+        wins++;
+        winCount.textContent = wins;  
+        
+    } else {
+        message.textContent = 'LOST!';
+        losses++;
+        loseCount.textContent = losses;
+    }
+});

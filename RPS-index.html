@@ -7,10 +7,10 @@
     <link rel="stylesheet" type="text/css" href="main.css"/>
     <link rel="stylesheet" type="text/css" href="style.css"/>
     <link rel="stylesheet" type="text/css" href="rpsstyle.css">
-    <title>Document</title>
+    <title>Rock Paper Scissors</title>
 </head>
 <body>
-    <header>
+<header>
         <nav id="rpsnav">
             <a href="./">Home</a>
             <a href="numbersindex.html">Number Game</a>
@@ -18,14 +18,18 @@
         </nav>
     </header>
 
-    <section id="first-section">
+    <div id="first-section">
         <h2 id="champion-header">PICK YOUR CHAMPION:</h2>
-        <div id="images">
-            <img src="src/rock.png" class="rock">
-            <img src="src/paper.png" class="paper">
-            <img src="src/Scissors.png" class="scissors">
-            </div>
-    </section>
+            <label><img src="src/rock.png" class="rock"><input type="radio"></label>
+            <label><img src="src/paper.png" class="paper"><input type="radio"></label>
+            <label><img src="src/Scissors.png" class="scissors"><input type="radio"></label>
+    </div>
+
+    <div id="section-two">
+        AND THE WINNER IS
+    </div>
+       
+
 
 <script src="./rps.js" type="module"></script>
 </body>

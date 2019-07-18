@@ -1,10 +1,9 @@
-
-     // return rock, paper or scissors
+// return rock, paper or scissors
 
 
 export default function getPlay() {
     // generate 0, 1 or 2
-    const randomNumber = Math.random();
+    const randomNumber = Math.floor((Math.random() * 3) + 1);
 
     // then call rock paper or scissor
     const choice = getRockPaperScissor(randomNumber);
@@ -14,9 +13,9 @@ export default function getPlay() {
 }
 
 export function getRockPaperScissor(randomNumber) {
-    if(randomNumber === 0 || randomNumber < 0.35) {
+    if(randomNumber === 1) {
         return 'rock';
-    } else if(randomNumber < 0.75 && randomNumber >= 0.35) {
+    } else if(randomNumber === 2) {
         return 'paper';
     } else {
         return 'scissors';

@@ -1,17 +1,31 @@
 body {
     border: solid white 10px;
+    background-color: #eb4d1a;
   }
 
 #rpsnav {
-padding: 50px 33%;
-width: 100%;
+padding: 50px 35%;
+width: auto;
 }
       
 a {
 color: white;
 font-family: Crimson Text;
 font-weight: 700;
-font-size: 28px;
+font-size: 20px;
 padding-right: 15px;
 width: 600px;
+}
+
+#first-section {
+    width: 48%;
+    padding-left: 5%;
+}
+
+#champion-header {
+font-size: 72px;
+font-family: Rubik;
+font-weight: 700;
+color: white;
+text-align: left;
 }

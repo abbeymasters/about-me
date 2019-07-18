@@ -63,9 +63,31 @@ img {
 width: 200px;
 }
 
-input {
-    float: left;
+#section-three {
+    width: 100%;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 5px white solid;
+    border-bottom: 5px white solid;
+    background-color: #eb4d1a;
 }
+
+#record {
+    position: relative;
+    top: 75px;
+    right: 275px;
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+}
+
+#mario {
+    padding-left: 25%;
+}
+
+
 
 input {
     display: none;

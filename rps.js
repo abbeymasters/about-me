@@ -2,6 +2,7 @@
 import getPlay from './get-play.js';
 
 // Call elements from DOM
+
 const playButton = document.getElementById('play-button');
 const result = document.getElementById('result');
 const message = document.getElementById('winlosemessage');
@@ -27,7 +28,7 @@ playButton.addEventListener('click', () => {
     if(won) {
         message.textContent = 'WON!';
         wins++;
-        winCount.textContent = wins;
+        winCount.textContent = wins;       
     } else {
         message.textContent = 'LOST!';
         losses++;

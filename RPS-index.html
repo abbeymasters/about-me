@@ -33,12 +33,20 @@
     </div>       
 
     <div id="section-three">
-            <img id="mario" src="http://giphygifs.s3.amazonaws.com/media/GeFSYLj0imJQ4/giphy.gif">
-        <h3>How ya doin?</h3>
+            <img class="column1" id="mario" src="http://giphygifs.s3.amazonaws.com/media/GeFSYLj0imJQ4/giphy.gif">
+        <div class="column2"><h3 class="h3">How ya doin?</h3>
         <p id="record">
             <span>Wins: <span id="win-count"></span></span><br>
             <span>Losses: <span id="loss-count"></span></span>
+        </p></div>
+        <div class="column3">
+        <h3 class="h3">Want to make a bet?</h3>
+        <p id="bet-text">You have <span id="money-count">$5.00</span> left!<br>
+        How much do you want to bet: <input id="bet-input" type="number" name="quantity" min="0.00" max="5.00">
+        <br><br>
+        <button id="bet-button">BET!</button>
         </p>
+        </p></div>
     </div>
 
 <script src="./rps.js" type="module"></script>

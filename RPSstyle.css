@@ -96,33 +96,64 @@ width: 200px;
 }
 
 #section-three {
-    width: 100%;
-    display: flex;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-top: 5px white solid;
-    border-bottom: 5px white solid;
-    background-color: #eb4d1a;
+display: flex;
+justify-content: center;
+padding-bottom: 25px;
+border-top: 5px white solid;
+border-bottom: 5px white solid;
+background-color: #eb4d1a;
 }
 
+
 #record {
-    position: relative;
-    top: 75px;
-    right: 250px;
     font-family: Rubik;
     font-weight: 400;
     font-size: 20px;
     color: white;
 }
 
-#mario {
-    padding-left: 25%;
+.column1, .column2, .column3 {
+  padding-left: 25px;
 }
 
+.column2 {
+  padding-right: 75px;
+}
+
+#mario {
+  position: relative;
+  padding-top: 3%;
+  height: 10%;
+  right: 10%;
+}
+
+#bet-text {
+font-family: Rubik;
+font-weight: 400;
+font-size: 20px;
+color: white;
+}
 
 
 input {
     display: none;
+}
+
+#bet-input {
+  display: inline-block;
+  width: 75px;
+  height: 16px;
+}
+
+#bet-button {
+  background-color: transparent;
+  border: white 5px solid;
+  border-radius: 10%;
+  padding: 10px 20px;
+  font-family: Rubik;
+  font-weight: 700;
+  color: white;
+  font-size: 16px;
 }
 
 label {

@@ -1,21 +1,8 @@
-// return rock, paper or scissors - this is the computer's choice
-export default function getPlay
+// return rock, paper or scissors
 
 
-function getCompAnswer() {
-    const computerOptions = ["rock", "paper", "scissors"];
-    const randomNumber = Math.floor((Math.random() * 3) + 1);
-    
-    options.forEach(option => {
-        option.addEventListener('click', function() {
-        const computerChoice  =  computerOptions[randomNumber];
-        return computerChoice;
-    });
-
-
-
-    function getPlay() {
-    // generate number
+export default function getPlay() {
+    // generate 0, 1 or 2
     const randomNumber = Math.floor((Math.random() * 3) + 1);
 
     // then call rock paper or scissor
@@ -25,12 +12,12 @@ function getCompAnswer() {
     return choice;
 }
 
-//export function getRockPaperScissor(randomNumber) {
- //   if(randomNumber === 1) {
-   //     return 'rock';
-  //  } else if(randomNumber === 2) {
-   //     return 'paper';
-   // } else {
-     //   return 'scissors';
-   // }
-//}
+export function getRockPaperScissor(randomNumber) {
+    if(randomNumber === 1) {
+        return 'rock';
+    } else if(randomNumber === 2) {
+        return 'paper';
+    } else {
+        return 'scissors';
+    }
+}

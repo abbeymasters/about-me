@@ -20,19 +20,21 @@
 
     <div id="first-section">
         <h2 id="champion-header">PICK YOUR CHAMPION:</h2>
-            <label><img src="src/rock.png" class="rock"><input type="radio"></label>
-            <label><img src="src/paper.png" class="paper"><input type="radio"></label>
-            <label><img src="src/Scissors.png" class="scissors"><input type="radio"></label>
+            <label><input type="radio" name="rps" value="rock" checked><img class="rps-image" src="src/rock.png" class="rock"></label>
+            <label><input type="radio" name="rps" value="paper"><img class="rps-image" src="src/paper.png" class="paper"></label>
+            <label><input type="radio" name="rps" value="scissors"><img class="rps-image" src="src/Scissors.png" class="scissors"></label>
+
+        <button id="play-button">Rock n Roll</button>
     </div>
 
     <div id="section-two">
-        <h2 id="winner-header">AND THE WINNER IS:</h2><br>
-        <img class="result" src="src/Scissors.png">
+        <h2 id="winner-header">AND YOU...</h2><span id="winlosemessage"></span>
+        <img id="result" class="invisible" src="src/Scissors.png">
     </div>       
 
     <div id="section-three">
             <img id="mario" src="http://giphygifs.s3.amazonaws.com/media/GeFSYLj0imJQ4/giphy.gif">
-        <h3>How'd you do?</h3>
+        <h3>How ya doin?</h3>
         <p id="record">
             <span>Wins: <span id="win-count">0</span></span>
             <span>Losses: <span id="loss-count">10</span></span>

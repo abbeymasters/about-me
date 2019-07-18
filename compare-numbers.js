@@ -1,4 +1,4 @@
-import './numbers';
+import './numbers.js';
 
 function compareNumbers(input, correct) {
     const numInput = parseInt(input);

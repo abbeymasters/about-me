@@ -38,6 +38,30 @@ text-align: left;
 width: 35%;
 }
 
+.rps-image {
+    border: 5px solid transparent;
+    border-radius: 100%;
+}
+
+input:checked + .rps-image {
+    border: 5px solid white;
+}
+
+.invisible {
+    visibility: hidden;
+  }
+
+#play-button {
+    background-color: transparent;
+    border: white 5px solid;
+    border-radius: 10%;
+    padding: 10px 20px;
+    font-family: Rubik;
+    font-weight: 700;
+    color: white;
+    font-size: 16px;
+}
+
 #section-two {
 width: 100%;
 display: flex;
@@ -52,6 +76,14 @@ border-bottom: 5px white solid;
 
 
 #winner-header {
+font-size: 72px;
+font-family: Rubik;
+font-weight: 700;
+color: white;
+text-align: center;
+}
+
+#winlosemessage {
 font-size: 72px;
 font-family: Rubik;
 font-weight: 700;
@@ -76,7 +108,7 @@ width: 200px;
 #record {
     position: relative;
     top: 75px;
-    right: 275px;
+    right: 250px;
     font-family: Rubik;
     font-weight: 400;
     font-size: 20px;

@@ -19,34 +19,51 @@ width: 600px;
 
 #first-section {
     width: 100%;
-    display: block;
-    border: solid white 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 5px white solid;
+    border-bottom: 5px white solid;
     background-color: #eb4d1a;
 }
 
 #champion-header {
-padding-top: 150px;
 font-size: 72px;
 font-family: Rubik;
 font-weight: 700;
 color: white;
 text-align: left;
-float: left;
 width: 35%;
 }
 
+#section-two {
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+padding-top: 20px;
+padding-bottom: 20px;
+background-color: #11bce1;
+border-top: 5px white solid;
+border-bottom: 5px white solid;
+}
+
+
+#winner-header {
+font-size: 72px;
+font-family: Rubik;
+font-weight: 700;
+color: white;
+text-align: center;
+}
+
 img {
-    width: 18%;
-    float: left;
-    padding-top: 100px;
+width: 200px;
 }
 
 input {
-    float: left;
-}
-
-#section-two {
-    display: block;
     float: left;
 }
 
@@ -58,14 +75,12 @@ label {
     cursor: pointer;
   }
 
+/* I used W3Schools method to shake the images — w3schools.com */
   img:hover {
-    /* Start the shake animation and make the animation last for 0.5 seconds */
     animation: shake 0.5s; 
-  
-    /* When the animation is finished, start again */
     animation-iteration-count: infinite; 
   }
-  
+
   @keyframes shake {
     0% { transform: translate(1px, 1px) rotate(0deg); }
     10% { transform: translate(-1px, -2px) rotate(-1deg); }

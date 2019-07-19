@@ -1,4 +1,4 @@
-import getRockPaperScissor from '/src/getplay.js';
+import { getRockPaperScissor } from '../src/getplay.js';
 
 const test = QUnit.test;
 

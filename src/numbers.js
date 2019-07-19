@@ -1,5 +1,3 @@
-import compareNumbers from './compare-numbers.js';
-
 // Dom Elements
 
 const quizButton = document.getElementById('button');

@@ -9,6 +9,7 @@ const quizResults = document.getElementById('quizresults');
 const quizResults2 = document.getElementById('quizresults2');
 const quizResults3 = document.getElementById('quizresults3');
 const gradeResults = document.getElementById('grade');
+const resultsHeader = document.getElementById('resultsheader');
 
 let quizScore = 0;
 
@@ -65,7 +66,7 @@ quizButton.onclick = function() {
     quizScore = Math.round(quizScore);
 
 
-
+    resultsHeader.classList.remove('hidden');
     quizResults.textContent = response;
     quizResults2.textContent = response2;
     quizResults3.textContent = response3;

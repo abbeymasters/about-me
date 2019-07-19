@@ -132,42 +132,32 @@ a {
   padding-bottom: 50px;
 }
 
-h4{
+li, h4 {
   font-family: Rubik;
   font-weight: 700;
   color: white;
   font-size: 16px;
   line-height: 1.6em;
-  padding-left: 50px;
 }
 
 #secondsection {
   padding-top: 75px;
   width: 100%;
-}
-
-#rules {
-  padding-top: 50px;
-  float: left;
-  width: 27%;
+  display: flex;
+  align-items: flex-start;
 }
 
 #buttonsection {
-    float: left;
-    width: 31.0%;
-    padding-left: 150px;
-    padding-top: 50px;
+    text-align: center;
   }
 
 #questionmark {
-  float: left;
   width: 30.33%;
-  padding-bottom: 100px;
 }
 
 input {
-  display: inline-block;
-
+  width: 150px;
+  font-size: 1.5em;
 }
 
 h5 {
@@ -176,13 +166,4 @@ h5 {
 
 .hidden {
   display: none;
-}
-
-#picktext {
-    text-align: left;
-    float: left;
-}
-
-#followtext {
-    padding-left: 75px;
 }

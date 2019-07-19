@@ -103,7 +103,7 @@ body {
     font-size: 75px;
     text-decoration: underline;
     text-align: center;
-    padding-top: 50px;
+    padding-bottom: 22px;
     width: auto;
 }
 
@@ -117,68 +117,55 @@ h2 {
 h3 {
   color: white;
   font-family: Georgia;
-  font-size: 36px;
+
 }
 
 #me {
-    color: white;
+    color: #11bce1;;
     font-family: Crimson Text;
     font-weight: 700;
     font-size: 20px;
     padding-left: 50px;
 }
 
-
-.together {
-    padding-top: 75px;
-    padding-bottom: 50px;
+#firstsection h2 {
+  color: #11bce1;
 }
 
 #newzealandpic {
     float: right;
     width: 50%;
+    margin-left: 50px;
 }
 
-#text {
-    width: 45%;
-    display: inline-block;
-    text-align: left;
-    padding-top: 75px;
+section {
+    padding: 2% 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-#secondsection {
-    padding-top: 50px;
-    padding-bottom: 0px;
-    padding-left: 30px;
-    height: 300px;
-    float: left;
-    text-align: left;
-    width: 45%;
+button {
+  background-color: transparent;
+  border: white 5px solid;
+  border-radius: 10%;
+  padding: 10px 20px;
+  font-family: Rubik;
+  font-weight: 700;
+  color: white;
+  font-size: 16px;
 }
 
-#thirdsection {
-    padding-top: 30px;
-    padding-bottom: 0px;
-    padding-left: 30px;
-    height: 300px;
-    float: right;
-    text-align: left;
-    width: 50%;
+#firstsection {
+  background: white;
+  padding: 0;
 }
 
-#bullets {
+#bullets, #numbers {
     color: white;
     font-family: Rubik;
     line-height: 1.4em;
     display: inline-block;
-}
-
-#numbers {
-    color: white;
-    font-family: Rubik;
-    line-height: 1.4em;
-    display: inline-block;
-    width: 50%;
 }
 
 #quizbutton {
@@ -192,46 +179,22 @@ h3 {
   width: 450px;
 }
 
-#buttonsection {
-    height: 50px;
-    width: 100%;
-    text-align: center;
-    padding-bottom: 100px;
-    display: inline-block;
+#resultsheader {
+  padding-left: 0;
 }
 
-#photos {
-    padding-bottom: 100px;
-    display: inline-block;
-    padding-left: 1.80%;
-    padding-right: 1%;
+.hidden {
+  display: none;
 }
 
-#quizresults {
-  color: white;
-  font-family: Rubik;
-  line-height: 0.5em;
-  display: inline-block;
-  padding-left: 50px;
-}
-
-#quizresults2 {
-  color: white;
-  font-family: Rubik;
-  line-height: 0.5em;
-  display: inline-block;
-  padding-left: 50px;
-}
-
-#quizresults3 {
-  color: white;
-  font-family: Rubik;
-  line-height: 0.5em;
-  display: inline-block;
-  padding-left: 50px;
+#fourthsection {
+  text-align: center;
   padding-bottom: 100px;
 }
 
-#grade {
-  padding-left: 3%;
+#quizresults, #quizresults2, #quizresults3 {
+  color: white;
+  font-family: Rubik;
+  line-height: 0.1em;
+  display: inline-block;
 }

@@ -8,42 +8,50 @@
     <link rel="stylesheet" type="text/css" href="/src/style.css"/>
     <title>Document</title>
 </head>
+
 <body>
     <header>
-            <nav id="rpsnav">
-                    <a href="./">Home</a>
-                    <a href="numbersindex.html">Number Game</a>
-                    <a href="RPS-index.html">Rock Paper Scissors</a>
-             </nav>
+        <nav id="rpsnav">
+            <a href="./">Home</a>
+            <a href="numbersindex.html">Number Game</a>
+            <a href="RPS-index.html">Rock Paper Scissors</a>
+        </nav>
+        <h1 id="header">Are you ready to play a GAME?</h1>
     </header>
     
-        <h1 id="header">Are you ready to play a GAME?</h1>
     <section id="firstsection">
         <h2 id="firstheader">YOUR OBJECTIVE: Guess the correct number!</h2>
     </section>
     
     <section id="secondsection">
-            <div id="rules">
-                    <h3 id="followtext">Follow the rules:</h3>
-                    <h4><ol>
-                        <li>Plug in a number between 1 and 20.</li>
-                        <li>Press submit</li>
-                        <li>If you're incorrect, we'll tell you if you're too high or low</li>
-                        <li>You have four tries to get the correct number</li>
-                        <li>Try until you WIN</li>
-             </ol></h4></div>
-             <div id="buttonsection">
-                    <h3 id="picktext">Pick Your Number:</h3><br>
-                <div id="inputbutton">
+        <div id="rules">
+            <h3 id="followtext">Follow the rules:</h3>
+            <ol>
+                <li>Plug in a number between 1 and 20.</li>
+                <li>Press submit</li>
+                <li>If you're incorrect, we'll tell you if you're too high or low</li>
+                <li>You have four tries to get the correct number</li>
+                <li>Try until you WIN</li>
+             </ol>
+        </div>
+        
+        <div id="buttonsection">
+            <h3 id="picktext">Pick Your Number:</h3>
+            
+            <p>
                 <input id="inputnumber" type="number" min="1" max="20">
-                <button id="button">Submit</button><br></div>
-                <img id="toohigh" class="invisible" src="/assets/toohigh.png">
-                <img id="toolow" class="invisible" src="/assets/toolow.png">
-                <img id="youwin" class="invisible" src="/assets/YOUWIN.png">
-                <h5>You've used <span id="tries"></span> out of 4 tries.</h5><br>
+            </p>
+            <button id="button">Submit</button><br>
+            <h4>You've used <span id="tries"></span> out of 4 tries.</h4><br>
+            
+
+                <img id="toohigh" class="hidden" src="/assets/toohigh.png">
+                <img id="toolow" class="hidden" src="/assets/toolow.png">
+                <img id="youwin" class="hidden" src="/assets/YOUWIN.png">
                 <p id="lost-message"></p>
-                </div>
-                <img id="questionmark" src="https://images.vexels.com/media/users/3/152285/isolated/preview/867cfbfe782227d2c8311abe53f72cd5-3d-question-mark-drawing-by-vexels.png" alt="numbers game image" width="200">
+        </div>
+            
+        <img id="questionmark" src="https://images.vexels.com/media/users/3/152285/isolated/preview/867cfbfe782227d2c8311abe53f72cd5-3d-question-mark-drawing-by-vexels.png" alt="numbers game image" width="200">
             
      </section>
      

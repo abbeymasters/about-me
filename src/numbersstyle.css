@@ -53,6 +53,10 @@ h5 {
   color: white;
 }
 
-.hidden {
-  display: none;
+.invisible {
+  visibility: hidden;
+}
+
+#inputbutton {
+padding-left: 20%;
 }

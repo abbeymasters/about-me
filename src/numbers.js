@@ -20,9 +20,8 @@ const correct = 7;
 quizButton.addEventListener('click', () => {
     numGuesses -= 1;
 
-    // correct answer
-    if(compareNumbers(input.value, correct) === 0) {
-        youWin.classList.remove('hidden');
+    if(input === correct) {
+        youWin.classList.remove('invisible');
         quizButton.disabled = true;
     }
     else if(input < 7) {

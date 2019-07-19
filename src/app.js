@@ -1,6 +1,6 @@
-import isYes from '../isYes.js'; 
-import isYes2 from '../isYes2.js'; 
-import isYes3 from '../isYes3.js'; 
+import isYes from '/src/isYes.js'; 
+import isYes2 from '/src/isYes2.js'; 
+import isYes3 from '/src/isYes3.js/.js'; 
 
 // Reference needed DOM elements
 

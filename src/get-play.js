@@ -1,19 +1,20 @@
-// return rock, paper or scissors
 export default function getPlay() {
-    // generate 0, 1 or 2
-    const randomNumber = Math.floor((Math.random() * 3) + 1);
 
-    // then call rock paper or scissor
-    const choice = getRockPaperScissor(randomNumber);
+// generate random number 0, 1, or 2
+    const randomNumber = Math.floor(Math.random() * 3);
 
-    // return choice
-    return choice;
+// get function
+    const computerChoice = getRockPaperScissor(randomNumber);
+
+// return
+    return computerChoice;
+
 }
 
 export function getRockPaperScissor(randomNumber) {
-    if(randomNumber === 1) {
+    if(randomNumber === 0) {
         return 'rock';
-    } else if(randomNumber === 2) {
+    } else if(randomNumber === 1) {
         return 'paper';
     } else {
         return 'scissors';

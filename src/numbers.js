@@ -16,15 +16,15 @@ const tooLow = document.getElementById('toolow');
 
 // Event Handlers
 
-quizButton.addEventListener('click', () => {
-    let numButton = numInput.value;
+//*quizButton.addEventListener('click', () => {
+let numButton = numInput.value;
 
-    const result = compareNumbers(numButton, 7);
-    if(result === 0) {
-        youWin.classList.remove('hidden');
-        quizButton.disabled = true;
-    } else if(result === -1) {
-        tooLow.classList.remove('hidden');
-    } else {
-        tooHigh.classList.remove('hidden');
-    }});
+const result = compareNumbers(numButton, 7);
+if(result === 0) {
+    youWin.classList.remove('hidden');
+    quizButton.disabled = true;
+} else if(result === -1) {
+    tooLow.classList.remove('hidden');
+} else {
+    tooHigh.classList.remove('hidden');
+}

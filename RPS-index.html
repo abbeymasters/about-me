@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="main.css"/>
-    <link rel="stylesheet" type="text/css" href="style.css"/>
-    <link rel="stylesheet" type="text/css" href="rpsstyle.css">
+    <link rel="stylesheet" type="text/css" href="/src/main.css"/>
+    <link rel="stylesheet" type="text/css" href="/src/style.css"/>
+    <link rel="stylesheet" type="text/css" href="/src/rpsstyle.css">
     <title>Rock Paper Scissors</title>
 </head>
 <body>
@@ -20,16 +20,16 @@
 
     <div id="first-section">
         <h2 id="champion-header">PICK YOUR CHAMPION:</h2>
-            <label><input type="radio" name="rps" value="rock" checked><img class="rps-image" src="src/rock.png" class="rock"></label>
-            <label><input type="radio" name="rps" value="paper"><img class="rps-image" src="src/paper.png" class="paper"></label>
-            <label><input type="radio" name="rps" value="scissors"><img class="rps-image" src="src/Scissors.png" class="scissors"></label>
+            <label><input type="radio" name="rps" value="rock" checked><img class="rps-image" src="/assets/rock.png" class="rock"></label>
+            <label><input type="radio" name="rps" value="paper"><img class="rps-image" src="assets/paper.png" class="paper"></label>
+            <label><input type="radio" name="rps" value="scissors"><img class="rps-image" src="assets/Scissors.png" class="scissors"></label>
 
         <button id="play-button">Rock n Roll</button>
     </div>
 
     <div id="section-two">
         <h2 id="winner-header">AND YOU...</h2><span id="winlosemessage"></span>
-        <img id="result" class="invisible" src="src/Scissors.png">
+        <img id="result" class="invisible" src="/assets/Scissors.png">
     </div>       
 
     <div id="section-three">
@@ -52,6 +52,6 @@
         </p></div>
     </div>
 
-<script src="./rps.js" type="module"></script>
+<script src="/src/rps.js" type="module"></script>
 </body>
 </html>

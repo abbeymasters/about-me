@@ -1,10 +1,7 @@
-import './numbers.js';
-
 function compareNumbers(input, correct) {
-    const numInput = parseInt(input);
-    if(numInput === correct) {
+    if(input === correct) {
         return 0;
-    } else if(numInput < correct) {
+    } else if(input < correct) {
         return -1;
     } else {
         return 1;

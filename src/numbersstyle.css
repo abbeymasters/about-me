@@ -44,30 +44,9 @@ h4{
 }
 
 #secondsection {
-  padding-top: 75px;
-  padding-bottom: 200px;
-  width: 100%;
-}
-
-#rules {
-  padding-top: 50px;
-  float: left;
-  width: 33.33%;
-}
-
-#questionmark {
-  float: left;
-  width: 33.33%;
-}
-
-#buttonsection {
-  padding-top: 50px;
-  float: left;
-  width: 33.33%;
-}
-
-input {
-  display: inline-block;
+display: flex;
+justify-items: center;
+align-items: center;
 }
 
 h5 {

@@ -1,4 +1,4 @@
-import { getRockPaperScissor } from '/../src/get-play.js';
+import getRockPaperScissor from '/src/getplay.js';
 
 const test = QUnit.test;
 
@@ -7,7 +7,7 @@ QUnit.module('Rock Paper Scissors');
 test('rock = 0', assert => {
     // Arrange
     const number = 1;
-    const expected = 'paper';
+    const expected = 'rock';
 
     // Act
     const choice = getRockPaperScissor(number);

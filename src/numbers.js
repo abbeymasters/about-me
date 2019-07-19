@@ -34,6 +34,6 @@ quizButton.addEventListener('click', () => {
         numTries.textContent = numGuesses -= 1;
     }
     else if(numGuesses < 1) {
-        lostMessage.textContent = 'All out of guesses! Thanks for playing!'
+        lostMessage.textContent = 'All out of guesses! Thanks for playing!';
     }
 });

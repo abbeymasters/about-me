@@ -72,4 +72,4 @@ function compareResults(userChoice, compChoice) {
             losses++;
             lossCount.textContent = losses;
         }
-    }};
+    }}

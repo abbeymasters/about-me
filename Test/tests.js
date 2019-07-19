@@ -1,3 +1,3 @@
-import './isYes.test.js/index.js'; 
+import './isYes.test.js'; 
 import './get-play.test.js';
 import './compare-numbers.test.js';

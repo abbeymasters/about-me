@@ -1,2 +1,2 @@
 import './isYes-test.js'; 
-import './get-play.test.js';
+import '/src/getplay.js';

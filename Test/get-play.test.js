@@ -4,7 +4,7 @@ const test = QUnit.test;
 
 QUnit.module('Rock Paper Scissors');
 
-test('rock to equal less than 0.35', assert => {
+test('rock = 0', assert => {
     // Arrange
     const number = 1;
     const expected = 'paper';

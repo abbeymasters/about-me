@@ -1,13 +1,14 @@
+
 export default function getPlay() {
 
 // generate random number 0, 1, or 2
     const randomNumber = Math.floor(Math.random() * 3);
 
 // get function
-    const computerChoice = getRockPaperScissor(randomNumber);
+    const compChoice = getRockPaperScissor(randomNumber);
 
 // return
-    return computerChoice;
+    return compChoice;
 
 }
 

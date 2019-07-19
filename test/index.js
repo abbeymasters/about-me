@@ -14,5 +14,5 @@ global.sessionStorage = window.sessionStorage;
 global.URLSearchParams = window.URLSearchParams;
 global.URL = window.URL;
 
-require = require('./node_modules/esm')(module);
+require = require('esm')(module);
 module.exports = require('./tests.js.js');

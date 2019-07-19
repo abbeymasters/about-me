@@ -1,4 +1,4 @@
-import isYes from '/../src/isYes.js'; 
+import isYes from '/src/isYes.js'; 
 
 const test = QUnit.test;
 

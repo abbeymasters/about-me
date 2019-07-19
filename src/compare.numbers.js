@@ -1,3 +1,5 @@
+export default compareNumbers;
+
 function compareNumbers(input, correct) {
     if(input === correct) {
         return 0;
@@ -6,5 +8,3 @@ function compareNumbers(input, correct) {
     } else {
         return 1;
     }}
-
-export default compareNumbers;

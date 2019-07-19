@@ -6,7 +6,7 @@ QUnit.module('Rock Paper Scissors');
 
 test('rock = 0', assert => {
     // Arrange
-    const number = 1;
+    const number = 0;
     const expected = 'rock';
 
     // Act

@@ -1,5 +1,4 @@
-// return rock, paper or scissors
-
+// get rock paper or scissors to return to rps.js
 
 export default function getPlay() {
     // generate 0, 1 or 2
@@ -8,7 +7,7 @@ export default function getPlay() {
     // then call rock paper or scissor
     const choice = getRockPaperScissor(randomNumber);
 
-    // return choice
+    // return computer choice
     return choice;
 }
 
@@ -21,3 +20,4 @@ export function getRockPaperScissor(randomNumber) {
         return 'scissors';
     }
 }
+

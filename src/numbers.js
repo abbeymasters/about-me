@@ -1,4 +1,4 @@
-import compareNumbers from './compare-numbers';
+import compareNumbers from '/test/compare.numbers.test.js';
 
 // Dom Elements
 

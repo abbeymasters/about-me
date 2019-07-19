@@ -1,4 +1,4 @@
-import compareNumbers from '../Numbers/compare-numbers.js';
+import compareNumbers from '/src/compare.numbers.js';
 
 const test = QUnit.test;
 
@@ -14,3 +14,5 @@ test('decides if number is above or below 7', (assert) => {
 // Assert
     assert.equal(result, expected);
 });
+
+export default compareNumbers;

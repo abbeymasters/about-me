@@ -1,3 +1,4 @@
+import './isYes.js';
 export default isYes;
 
 function isYes(text) {

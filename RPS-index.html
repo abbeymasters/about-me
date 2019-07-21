@@ -10,7 +10,7 @@
     <title>Rock Paper Scissors</title>
 </head>
 <body>
-<header>
+    <header>
         <nav id="rpsnav">
             <a href="./">Home</a>
             <a href="numbersindex.html">Number Game</a>
@@ -23,7 +23,6 @@
             <label><input type="radio" name="rps" value="rock" checked><img class="rps-image" src="/assets/rock.png" class="rock"></label>
             <label><input type="radio" name="rps" value="paper"><img class="rps-image" src="assets/paper.png" class="paper"></label>
             <label><input type="radio" name="rps" value="scissors"><img class="rps-image" src="assets/Scissors.png" class="scissors"></label>
-
         <button id="play-button">Rock n Roll</button>
     </div>
 
@@ -33,23 +32,25 @@
     </div>       
 
     <div id="section-three">
-            <img class="column1" id="mario" src="http://giphygifs.s3.amazonaws.com/media/GeFSYLj0imJQ4/giphy.gif">
+        <img class="column1" id="mario" src="http://giphygifs.s3.amazonaws.com/media/GeFSYLj0imJQ4/giphy.gif">
         <div class="column2"><h3 class="h3">How ya doin?</h3>
-        <p id="record">
-            <span>Wins: <span id="win-count"></span></span><br>
-            <span>Losses: <span id="loss-count"></span></span>
-        </p></div>
+            <p id="record">
+                <span>Wins: <span id="win-count"></span></span><br>
+                <span>Losses: <span id="loss-count"></span></span>
+            </p>
+        </div>
+        
         <div class="column3">
-        <h3 class="h3">Want to make a bet? Start with a $5!</h3>
-        <p id="bet-text">You have <span id="money-count">$5.00</span> left!<br>
-        How much do you want to bet: <input id="bet-input" type="number" name="quantity" step="any" min="0.00" max="5.00">
-        <br>
-        Make your rock, paper or scissors selection and click BET!
-        <br>
-        <br>
-        <button id="bet-button">BET!</button>
-        </p>
-        </p></div>
+            <h3 class="h3">Want to make a bet? Start with a $5!</h3>
+            <p id="bet-text">You have <span id="money-count">$5.00</span> left!<br>
+            How much do you want to bet: <input id="bet-input" type="number" name="quantity" step="any" min="0.00" max="5.00">
+            <br>
+            Make your rock, paper or scissors selection and click BET!
+            <br>
+            <br>
+            <button id="bet-button">BET!</button>
+            </p>
+        </div>
     </div>
 
 <script src="/src/rps.js" type="module"></script>

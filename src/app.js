@@ -1,6 +1,6 @@
 import isYes from './isYes.js'; 
 import isYes2 from './favoritebook.js'; 
-import isYes3 from './born-question.js'; 
+import isYes3 from './bornQuestion.js'; 
 
 // Reference needed DOM elements
 

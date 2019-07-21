@@ -86,10 +86,10 @@ body {
 }
 
 h2 {
-    color:#11bce1;
-    font-family: Georgia;
-    font-size: 28px;
-    padding-left: 50px;
+  color:#11bce1;
+  font-family: Georgia;
+  font-size: 28px;
+  padding-left: 50px;
 }
 
 h3 {
@@ -148,7 +148,7 @@ li, h4 {
 }
 
 #buttonsection {
-    text-align: center;
+  text-align: center;
   }
 
 #questionmark {

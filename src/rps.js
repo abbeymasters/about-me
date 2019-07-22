@@ -30,7 +30,7 @@ playButton.addEventListener('click', () => {
 
     // pull image for winner
     resultImage.classList.remove('invisible');
-    let src = 'assets/' + compChoice + '.png';
+    let src = './assets/' + compChoice + '.png';
     resultImage.src = src; 
 
     compareResults(userChoice, compChoice); 
@@ -91,7 +91,7 @@ betButton.addEventListener('click', () => {
 
     // pull image for winner
     resultImage.classList.remove('invisible');
-    let src = 'assets/' + compChoice + '.png';
+    let src = './assets/' + compChoice + '.png';
     resultImage.src = src; 
 
     getBetResults(userChoice, compChoice); 

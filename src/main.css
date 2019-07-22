@@ -198,3 +198,11 @@ button {
   line-height: 0.1em;
   display: inline-block;
 }
+
+#hidden {
+  display: none;
+}
+
+#ximage1, #ximage2, #ximage3, #checkimage1, #checkimage2, #checkimage3 {
+  width: 50px;
+}

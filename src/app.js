@@ -10,6 +10,12 @@ const quizResults2 = document.getElementById('quizresults2');
 const quizResults3 = document.getElementById('quizresults3');
 const gradeResults = document.getElementById('grade');
 const resultsHeader = document.getElementById('resultsheader');
+const xImage1 = document.getElementById('ximage1');
+const checkImage1 = document.getElementById('checkimage1');
+const xImage2 = document.getElementById('ximage2');
+const checkImage2 = document.getElementById('checkimage2');
+const xImage3 = document.getElementById('ximage3');
+const checkImage3 = document.getElementById('checkimage3');
 
 let quizScore = 0;
 
@@ -27,11 +33,11 @@ quizButton.onclick = function() {
     let response = 'Her name is ' + firstQuestion + '!';
 
     if(correct) {
-        response += ' Correct.';
+        response += checkImage1.classList.remove('hidden');
         quizScore += 1 / 3;
     } 
     else {
-        response += ' Incorrect! Her name is Abbey.';
+        response += xImage1.classList.remove('hidden');
     }
 
     const secondQuestion = prompt('What is her number one favorite book?');
@@ -39,11 +45,11 @@ quizButton.onclick = function() {
     let response2 = 'Her #1 favorite book is ' + secondQuestion + '!';
 
     if(correct2) {
-        response2 += ' Correct.';
+        response2 += checkImage2.classList.remove('hidden');
         quizScore += 1 / 3;
     }
     else {
-        response2 += ' Incorrect! It is actually Americanah.';
+        response2 = xImage2.classList.remove('hidden');
     }
     
     const thirdQuestion = prompt('Where was she born?');
@@ -51,10 +57,10 @@ quizButton.onclick = function() {
     let response3 = 'She was born in ' + thirdQuestion + '!';
 
     if(correct3) {
-        response3 += ' Correct.';
+        response3 += checkImage3.classList.remove('hidden');
         quizScore += 1 / 3;
     } else {
-        response3 += ' Incorrect! She was born in Houston.';
+        response3 += xImage3.classList.remove('hidden');
     }
 
     alert('Your results are ready!');

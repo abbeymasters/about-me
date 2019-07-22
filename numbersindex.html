@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="/src/main.css"/>
+    <link rel="stylesheet" type="text/css" href="/src/style.css"/>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav id="rpsnav">
+            <a href="./">Home</a>
+            <a href="numbersindex.html">Number Game</a>
+            <a href="RPS-index.html">Rock Paper Scissors</a>
+        </nav>
+        <h1 id="header">Are you ready to play a GAME?</h1>
+    </header>
+    
+    <section id="firstsection">
+        <h2 id="firstheader">YOUR OBJECTIVE: Guess the correct number!</h2>
+    </section>
+    
+    <section id="secondsection">
+        <div id="rules">
+            <h3 id="followtext">Follow the rules:</h3>
+            <ol>
+                <li>Plug in a number</li>
+                <li>Press submit</li>
+                <li>If you're incorrect, we'll tell you if you're too high or too low</li>
+                <li>You have four tries to find the correct number</li>
+             </ol>
+        </div>
+        
+        <div id="buttonsection">
+            <h3 id="picktext">Pick Your Number:</h3>
+            
+            <p>
+                <input id="inputnumber" type="number" min="1" max="20">
+            </p>
+            <button id="button">Submit</button><br>
+            <h4 id="guessesText">You've used <span id="tries">0</span> out of 4 tries.</h4><br>
+            <p id="lost-message"></p>
+
+                <img id="toohigh" class="hidden" src="/assets/toohigh.png">
+                <img id="toolow" class="hidden" src="/assets/toolow.png">
+                <img id="youwin" class="hidden" src="/assets/YOUWIN.png">
+        </div>
+            
+        <img id="questionmark" src="https://images.vexels.com/media/users/3/152285/isolated/preview/867cfbfe782227d2c8311abe53f72cd5-3d-question-mark-drawing-by-vexels.png" alt="numbers game image" width="200">
+            
+     </section>
+     
+     <script src="/src/numbers.js" type="module"></script>
+</body>
+</html>

@@ -132,7 +132,7 @@ a {
   padding-bottom: 50px;
 }
 
-li, h4 {
+li, #lost-message, h4 {
   font-family: Rubik;
   font-weight: 700;
   color: white;
@@ -167,3 +167,5 @@ h5 {
 .hidden {
   display: none;
 }
+
+

@@ -49,7 +49,7 @@ quizButton.onclick = function() {
         quizScore += 1 / 3;
     }
     else {
-        response2 = xImage2.classList.remove('hidden');
+        response2 += xImage2.classList.remove('hidden');
     }
     
     const thirdQuestion = prompt('Where was she born?');

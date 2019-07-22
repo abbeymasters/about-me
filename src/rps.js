@@ -8,13 +8,15 @@ const resultMessage = document.getElementById('winlosemessage');
 const resultImage = document.getElementById('result');
 const winCount = document.getElementById('win-count');
 const lossCount = document.getElementById('loss-count');
+const doneText = document.getElementById('done-text');
 
 let wins = 0;
 let losses = 0;
+let start = 50;
 
 const betButton = document.getElementById('bet-button');
 const moneyCount = document.getElementById('money-count');
-const betInput = document.getElementById('get-input');
+const betInput = document.getElementById('bet-input');
 
 
 // return rock, paper or scissors
@@ -92,18 +94,19 @@ betButton.addEventListener('click', () => {
     let src = '/assets/' + compChoice + '.png';
     resultImage.src = src; 
 
-    compareBetResults(userChoice, compChoice); 
+    getBetResults(userChoice, compChoice); 
+    betLossWin();
 
     //send results
     winCount.textContent = wins;
     lossCount.textContent = losses;
+    moneyCount.textContent = start;
 
 });   
 
 //compareResults + betting
 
-
-function compareBetResults(userChoice, compChoice) {
+function getBetResults(userChoice, compChoice) {
     if(userChoice === compChoice) {
         resultMessage.textContent = 'TIED!';
     }
@@ -112,12 +115,12 @@ function compareBetResults(userChoice, compChoice) {
             resultMessage.textContent = 'WON!';
             wins++;
             winCount.textContent = wins; 
-            let x = moneyCount + betInput;
-            moneyCount.textContent = x;
+            start += +betInput.value;
         } else {
             resultMessage.textContent = 'LOST!';
             losses++;
             lossCount.textContent = losses;
+            start -= betInput.value;
         } 
     }
     else if(userChoice === 'scissors') {
@@ -125,10 +128,12 @@ function compareBetResults(userChoice, compChoice) {
             resultMessage.textContent = 'WON!';
             wins++;
             winCount.textContent = wins;  
+            start += +betInput.value;
         } else {
             resultMessage.textContent = 'LOST!';
             losses++;
             lossCount.textContent = losses;
+            start -= betInput.value;
         } 
     }
     else if(userChoice === 'paper') {
@@ -136,9 +141,23 @@ function compareBetResults(userChoice, compChoice) {
             resultMessage.textContent = 'WON!';
             wins++;
             winCount.textContent = wins;  
+            start += +betInput.value;
         } else {
             resultMessage.textContent = 'LOST!';
             losses++;
             lossCount.textContent = losses;
+            start -= betInput.value;
         }
     }}
+
+function betLossWin() {
+    if(start <= 0) {
+        betButton.disabled = true;
+        moneyCount.textContent = 0;
+        doneText.textContent = 'You lost to the dealer!';
+    } else if(start >= 100) {
+        betButton.disabled = true;
+        moneyCount.textContent = 100;
+        doneText.textContent = 'You beat the dealer!';
+    }
+}

@@ -1,5 +1,5 @@
 // import functions
-import getPlay from 'src/getplay.js';
+import getPlay from './getplay.js';
 
 
 // get DOM elements
